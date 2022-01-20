@@ -102,8 +102,8 @@
 
 @media (max-width: 990px) {
   .sources {
-    -ms-grid-columns: 1fr, 1fr;
-    grid-template-columns: 1fr, 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 600px) {
