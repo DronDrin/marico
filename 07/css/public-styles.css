@@ -1,6 +1,6 @@
 @import 'zeros.css';
-@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,900&display=swap);
 ._container {
   margin: 0 auto;
   width: 100%;
