@@ -1,0 +1,295 @@
+//==imports========================================================================
+@import 'public-styles.css';
+
+//==plan==========================================================================
+.plan {
+    padding-top: 126px;
+    margin-bottom: 190px;
+    &__header {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 75px;
+        line-height: 149%;
+        color: #FFFFFF;
+        margin-bottom: 123px;
+        text-align: center;
+    }
+    &__cards {
+        display: flex;
+        width: 100%;
+        justify-content:space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+}
+
+.card {
+    background-color: #131313;
+    border: 1px solid #707070;
+    width: max-content;
+    border-radius: 20px;
+    padding: 35px 50px 35px 35px;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    &__header {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 1px;
+    }
+    &__underheader {
+        font-family: Poppins;
+        font-size: 28px;
+        line-height: 150%;
+        color: #B4B1B1;
+        margin-bottom: 14px;
+    }
+    &__cost {
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 69px;
+        line-height: 151%;
+        color: #FFFFFF;
+    }
+    &__per {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 150%;
+        color: #B4B1B1;
+    }
+    &__free .card__cost {
+        margin-bottom: 108px;
+    }
+    &__or {
+        display: block;
+        font-family: Poppins;
+        font-size: 28px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        color: #B4B1B1;
+        user-select: none;
+        margin-bottom: 67px;
+    }
+    &__collect {
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 148%;
+        color: #FFFFFF;
+        margin-bottom: 9px;
+    }
+    &__emails {
+        font-family: Poppins;
+        font-size: 28px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 45.8px;
+    }
+    &__more-emails {
+        font-family: Poppins;
+        font-size: 24px;
+        line-height: 150%;
+        color: #B4B1B1;
+        margin-bottom: 53.2px;
+        text-align: center;
+    }
+    &__features-header {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 28px;
+    }
+    &__features {
+        margin-bottom: 79px;
+        flex: 1 1 auto;
+    }
+    &__feature {
+        display: flex;
+        align-items: center;
+        &-body {
+            font-family: Poppins;
+            font-size: 24px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__bird {
+        width: 20px;
+        height: 10px;
+        border-left: 2px solid #E3E3E3;
+        border-bottom: 2px solid #E3E3E3;
+        transform: translateY(-5px) rotateZ(-45deg);
+        margin-right: 10px;
+    }
+    &__start {
+        padding: 32.5px;
+        display: block;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 148%;
+        color: #FFFFFF;
+        width: 100%;
+        border-radius: 10px;
+        border: 3.5px solid #4681E7;
+        text-align: center;
+        user-select: none;
+        transition: 0.7s background-color;
+        &:hover {
+            background-color: #4681E7;
+        }
+    }
+}
+
+.card__best {
+    background-color: #3C82F4;
+    .card__underheader {
+        color: white;
+    }
+    .card__per {
+        color: white;
+    }
+    .card__or {
+        color: white;
+        text-decoration: none;
+    }
+    .card__more-emails {
+        color: white;
+    }
+    .card__start {
+        background-color: white;
+        color: #3C82F4;
+        border: 3.5px solid white;
+        transition: 0.7s background-color, 0.7s color;
+        &:hover {
+            background-color: transparent;
+            color: white;
+        }
+    }
+}
+@media (max-width: 1635px) {
+    .card {
+        &__header {
+            font-size: 40px;
+        }
+        &__underheader {
+            font-size: 20px;
+        }
+        &__cost {
+            font-size: 55px;
+        }
+        &__per {
+            font-size: 19px;
+        }
+        &__or {
+            font-size: 19px;
+        }
+        &__collect {
+            font-size: 20px;
+        }
+        &__emails {
+            font-size: 20px;
+        }
+        &__more-emails {
+            font-size: 17px;
+        }
+        &__features-header {
+            font-size: 20px;
+        }
+        &__feature {
+            &-body {
+                font-size: 18px;
+            }
+        }
+        &__start {
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .plan__header {
+        font-size: 50px;
+    }
+    .card {
+        width: 100%;
+    }
+    .plan__cards {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+}
+@media (max-width: 410px) {
+    .plan__header {
+        font-size: 40px;
+    }
+    .card {
+        &__header {
+            font-size: 35px;
+        }
+        &__underheader {
+            font-size: 17px;
+        }
+        &__cost {
+            font-size: 48px;
+        }
+        &__free .card__cost {
+            margin-bottom: 40px;
+        }
+        &__per {
+            font-size: 13px;
+        }
+        &__or {
+            font-size: 13px;
+        }
+        &__collect {
+            font-size: 15px;
+        }
+        &__emails {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        &__more-emails {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        &__features-header {
+            font-size: 15px;
+        }
+        &__features {
+            margin-bottom: 40px;
+        }
+        &__feature {
+            &-body {
+                font-size: 12px;
+            }
+        }
+        &__start {
+            font-size: 14px;
+            padding: 15px;
+        }
+    }
+
+}
+
+@media (max-width: 360px) {
+    .card__start {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
