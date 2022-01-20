@@ -48,8 +48,8 @@
   gap: 23px;
   -ms-grid-columns: 1fr 23px 1fr 23px 1fr;
   grid-template-columns: repeat(3, 1fr);
-  -webkit-perspective: 500px;
-          perspective: 500px;
+  -webkit-perspective: 5000px;
+          perspective: 5000px;
 }
 
 .source {
@@ -96,8 +96,8 @@
 .source:hover {
   -webkit-box-shadow: 0 0 20px 20px rgba(0, 0, 255, 0.5);
           box-shadow: 0 0 20px 20px rgba(0, 0, 255, 0.5);
-  -webkit-transform: translateZ(50px);
-          transform: translateZ(50px);
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
 }
 
 @media (max-width: 990px) {
