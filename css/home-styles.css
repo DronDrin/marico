@@ -31,11 +31,11 @@ body {
   color: white;
   text-align: center;
 }
-.page-header__pink-orange {
-  color: #FFBF84;
+.page-header__gradient-lazy {
+  color: #ffa784;
 }
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  .page-header__pink-orange {
+  .page-header__gradient {
     background: -webkit-gradient(linear, left top, right top, from(#FE6783), to(#FFBF84));
     background: linear-gradient(to right, #FE6783, #FFBF84);
     -webkit-background-clip: text;

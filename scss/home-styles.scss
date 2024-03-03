@@ -31,8 +31,10 @@ body {
         color: white;
         text-align: center;
     }
-    &__pink-orange {
-        color: #FFBF84;
+    &__gradient-lazy {
+        color: #ffa784;
+    }
+    &__gradient {
         @supports (background-clip: text) {
             background: linear-gradient(to right, #FE6783, #FFBF84);
             -webkit-background-clip: text;
