@@ -1,0 +1,319 @@
+@import 'public-styles.css';
+.plan {
+  padding-top: 126px;
+  margin-bottom: 190px;
+}
+@media (max-width: 600px) {
+  .plan {
+    padding-top: 80px;
+    margin-bottom: 70px;
+  }
+}
+.plan__header {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 149%;
+  color: #FFFFFF;
+  margin-bottom: 123px;
+  text-align: center;
+}
+.plan__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  background-color: #131313;
+  border: 1px solid #707070;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 20px;
+  padding: 35px 50px 35px 35px;
+  max-width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+}
+.card__header {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 1px;
+}
+.card__underheader {
+  font-family: Poppins;
+  font-size: 28px;
+  line-height: 150%;
+  color: #B4B1B1;
+  margin-bottom: 14px;
+}
+.card__cost {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 69px;
+  line-height: 151%;
+  color: #FFFFFF;
+}
+.card__per {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 150%;
+  color: #B4B1B1;
+}
+.card__free .card__cost {
+  margin-bottom: 108px;
+}
+.card__or {
+  display: block;
+  font-family: Poppins;
+  font-size: 28px;
+  line-height: 150%;
+  text-decoration-line: underline;
+  color: #B4B1B1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 67px;
+}
+.card__collect {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 148%;
+  color: #FFFFFF;
+  margin-bottom: 9px;
+}
+.card__emails {
+  font-family: Poppins;
+  font-size: 28px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 45.8px;
+}
+.card__more-emails {
+  font-family: Poppins;
+  font-size: 24px;
+  line-height: 150%;
+  color: #B4B1B1;
+  margin-bottom: 53.2px;
+  text-align: center;
+}
+.card__features-header {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+}
+.card__features {
+  margin-bottom: 79px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.card__feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__feature-body {
+  font-family: Poppins;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.card__feature:not(:last-child) {
+  margin-bottom: 20px;
+}
+.card__bird {
+  width: 20px;
+  height: 10px;
+  border-left: 2px solid #E3E3E3;
+  border-bottom: 2px solid #E3E3E3;
+  -webkit-transform: translateY(-5px) rotateZ(-45deg);
+          transform: translateY(-5px) rotateZ(-45deg);
+  margin-right: 10px;
+}
+.card__start {
+  padding: 32.5px;
+  display: block;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 148%;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 10px;
+  border: 3.5px solid #4681E7;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.7s background-color;
+  transition: 0.7s background-color;
+}
+.card__start:hover {
+  background-color: #4681E7;
+}
+
+.card__best {
+  background-color: #3C82F4;
+}
+.card__best .card__underheader {
+  color: white;
+}
+.card__best .card__per {
+  color: white;
+}
+.card__best .card__or {
+  color: white;
+  text-decoration: none;
+}
+.card__best .card__more-emails {
+  color: white;
+}
+.card__best .card__start {
+  background-color: white;
+  color: #3C82F4;
+  border: 3.5px solid white;
+  -webkit-transition: 0.7s background-color, 0.7s color;
+  transition: 0.7s background-color, 0.7s color;
+}
+.card__best .card__start:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 1635px) {
+  .card__header {
+    font-size: 40px;
+  }
+  .card__underheader {
+    font-size: 20px;
+  }
+  .card__cost {
+    font-size: 55px;
+  }
+  .card__per {
+    font-size: 19px;
+  }
+  .card__or {
+    font-size: 19px;
+  }
+  .card__collect {
+    font-size: 20px;
+  }
+  .card__emails {
+    font-size: 20px;
+  }
+  .card__more-emails {
+    font-size: 17px;
+  }
+  .card__features-header {
+    font-size: 20px;
+  }
+  .card__feature-body {
+    font-size: 18px;
+  }
+  .card__start {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .plan__header {
+    font-size: 50px;
+  }
+  .card {
+    width: 100%;
+  }
+  .plan__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 410px) {
+  .plan__header {
+    font-size: 40px;
+  }
+  .card__header {
+    font-size: 35px;
+  }
+  .card__underheader {
+    font-size: 17px;
+  }
+  .card__cost {
+    font-size: 48px;
+  }
+  .card__free .card__cost {
+    margin-bottom: 40px;
+  }
+  .card__per {
+    font-size: 13px;
+  }
+  .card__or {
+    font-size: 13px;
+  }
+  .card__collect {
+    font-size: 15px;
+  }
+  .card__emails {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .card__more-emails {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .card__features-header {
+    font-size: 15px;
+  }
+  .card__features {
+    margin-bottom: 40px;
+  }
+  .card__feature-body {
+    font-size: 12px;
+  }
+  .card__start {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .card__start {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
