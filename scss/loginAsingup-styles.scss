@@ -82,7 +82,7 @@
                 text-shadow: 5px 5px rgba(17, 0, 255, 0.453);
             }
             .companys__icon {
-                transform: scaleX(120%) scaleY(120%);
+                transform: scaleX(1.2) scaleY(1.2);
             }
         }
     }
@@ -148,7 +148,7 @@
 .field {
     display: flex;
     padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    border-bottom: 1px solid rgb(255, 255, 255);
     width: 100%;
     max-width: 490px;
     transition: 0.3s;
@@ -169,8 +169,8 @@
         max-height: 50px;
         transition: 0.3s;
     }
-    &:not(:has(.field__input:placeholder-shown)) {
-        border-bottom: 1px solid rgb(255, 255, 255);
+    &:has(.field__input:placeholder-shown) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.38);
     }
 }
 

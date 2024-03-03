@@ -92,8 +92,8 @@
   text-shadow: 5px 5px rgba(17, 0, 255, 0.453);
 }
 .companys__button:hover .companys__icon {
-  -webkit-transform: scaleX(120%) scaleY(120%);
-          transform: scaleX(120%) scaleY(120%);
+  -webkit-transform: scaleX(1.2) scaleY(1.2);
+          transform: scaleX(1.2) scaleY(1.2);
 }
 .companys__icon {
   max-width: 50px;
@@ -162,7 +162,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 15px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 1px solid rgb(255, 255, 255);
   width: 100%;
   max-width: 490px;
   -webkit-transition: 0.3s;
@@ -197,14 +197,14 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.field:not(:has(.field__input:-moz-placeholder-shown)) {
-  border-bottom: 1px solid rgb(255, 255, 255);
+.field:has(.field__input:-moz-placeholder-shown) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
 }
-.field:not(:has(.field__input:-ms-input-placeholder)) {
-  border-bottom: 1px solid rgb(255, 255, 255);
+.field:has(.field__input:-ms-input-placeholder) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
 }
-.field:not(:has(.field__input:placeholder-shown)) {
-  border-bottom: 1px solid rgb(255, 255, 255);
+.field:has(.field__input:placeholder-shown) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38);
 }
 
 .submit {
